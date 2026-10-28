@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETR.IO 複製版 - 雙人對戰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="status">正在連線到伺服器...</h1>
+        <div class="boards">
+            <!-- 左邊：你自己的畫面 -->
+            <div class="player-side">
+                <h2>你</h2>
+                <canvas id="tetris" width="240" height="400"></canvas>
+            </div>
+
+            <!-- 右邊：對手的即時畫面（新增這一段） -->
+            <div class="player-side">
+                <h2>對手</h2>
+                <canvas id="opponent" width="240" height="400"></canvas>
+            </div>
+        </div>
+        <div id="score">分數: 0</div>
+    </div>
+
+    <!-- 引入 Socket.io 客戶端 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="tetris.js"></script>
+</body>
+</html>

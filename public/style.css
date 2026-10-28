@@ -1,0 +1,14 @@
+body {
+    background: #111116;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.game-container { text-align: center; }
+.boards { display: flex; gap: 40px; justify-content: center; margin: 20px 0; }
+canvas { background: #000; border: solid 3px #333; }
+#status { font-size: 20px; color: #ffdd67; }
