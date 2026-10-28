@@ -1,5 +1,6 @@
 // 修正後的第一行：確保網頁能正常初始化 socket 連線
-const socket = io();
+const socket = io(window.location.origin);
+
 
 // 宣告自己的畫布
 const canvas = document.getElementById('tetris');
